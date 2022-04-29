@@ -21,3 +21,8 @@ function exponent(a,b){
 function subt(a,b){
     return (a-b)
 }
+
+function nameShuffler(str){
+    let newString = str.split(' ')
+    return (newString[1]+ ' '+ newString[0])
+  }
