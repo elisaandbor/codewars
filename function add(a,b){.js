@@ -26,3 +26,12 @@ function nameShuffler(str){
     let newString = str.split(' ')
     return (newString[1]+ ' '+ newString[0])
   }
+
+  function noSpace(x){return x.split(' ').join('')}
+
+  function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    if(dolphin){
+      sharkSpeed /= 2;
+    }
+    return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ? "Alive!" : "Shark Bait!";
+  }
