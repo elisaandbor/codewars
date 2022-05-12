@@ -35,3 +35,15 @@ function nameShuffler(str){
     }
     return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ? "Alive!" : "Shark Bait!";
   }
+  function multiply(a, b){
+    return a*b;
+  }
+  function defineSuit(card) {
+    const s = {
+      "♣": "clubs",
+      "♠": "spades",
+      "♦": "diamonds",
+      "♥": "hearts"
+    }
+    return s[card.charAt(card.length - 1)]
+  }
