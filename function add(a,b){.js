@@ -54,6 +54,6 @@ function nameShuffler(str){
     return str;
   }
 
-  function multiply(a, b){
-    return a*b;
+  function dBScale(intensity) {
+    return 10 * Math.log10(intensity / Math.pow(10, -12));
   }
