@@ -57,3 +57,11 @@ function nameShuffler(str){
   function dBScale(intensity) {
     return 10 * Math.log10(intensity / Math.pow(10, -12));
   }
+
+  function mergeArrays(arr1, arr2) {
+    let Array = arr1.concat(arr2);
+   let newArray = Array.filter((value,
+      index) => Array.indexOf(value) === index);
+     return newArray.sort((a,b) => a-b);
+  }
+  console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]))
