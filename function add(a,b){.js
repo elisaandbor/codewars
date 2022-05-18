@@ -65,3 +65,7 @@ function nameShuffler(str){
      return newArray.sort((a,b) => a-b);
   }
   console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]))
+
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return ((fuelLeft  * mpg) >= distanceToPump) ? true : false
+  };
