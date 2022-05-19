@@ -69,3 +69,8 @@ function nameShuffler(str){
   const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return ((fuelLeft  * mpg) >= distanceToPump) ? true : false
   };
+
+  function aspectRatio(x,y){
+    let newx = Math.ceil((16*y)/9)
+    return [newx, y]
+  }
