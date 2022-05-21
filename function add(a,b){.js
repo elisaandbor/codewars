@@ -74,3 +74,12 @@ function nameShuffler(str){
     let newx = Math.ceil((16*y)/9)
     return [newx, y]
   }
+
+  function powersOfTwo(n){
+    array = [];
+     for(let i = 0; i <= n; i++){
+     array.push(Math.pow(2,i))
+     
+    };
+    return array;
+  }
