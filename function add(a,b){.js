@@ -100,3 +100,13 @@ function nameShuffler(str){
     
     return array [(nbPetals -1 ) % array.length]
 }
+
+
+function sumOfDifferences(arr) {
+  let Arr = arr.sort((a,b) => b-a);
+  let newArr = Arr.map((a,i) => a - Arr[i + 1] || 0);
+  let res = newArr.reduce((a,b) => a + b, 0)
+   return res
+ 
+ }
+ 
