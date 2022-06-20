@@ -175,41 +175,99 @@
 // var stairs = [sunday,monday,tuesday,wednesday,thursday,friday,saturday]
 
 
-// function stairsIn20(a) {
-//   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
-// }
+// // function stairsIn20(a) {
+// //   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
+// // }
 
-// console.log(stairsIn20(stairs))
+// // console.log(stairsIn20(stairs))
 
 
-function howManyDalmations(numer){
-  let result = ''
-  if (numer <= 10){
-    result = "nothing"
-  }else if (numer <= 50){
-    result = dogs[1]
-  }else if (numer = 101){
-    result = dogs[2], dogs[3]
-  }
-  return result
-}
+// // function howManyDalmations(numer){
+// //   switch (true) {
+// //     case number <= 10:
+// //       return dogs[0];
+// //     case number <= 50:
+// //       return dogs[1];
+// //     case number <= 100:
+// //       return dogs[2];
+// //     case number === 101:
+// //       return dogs[3];  
+// //     default:
+// //       return ``;  
+// // }
+// // }
 
-// function howManyDalmations(numer){
-//   switch (numer){
-//     case numer <= 10:
-//      let result = "nothing";
-//       break;
-//     case numer <= 50:
-//         result = dogs[1];
-//         break;
-//     case numer = 101:
-//       result = dogs[2], dogs[3];
-//       break;
-//   }
-//   return result
+// // function howManyDalmations(numer){
+// //   switch (numer){
+// //     case numer <= 10:
+// //      let result = "nothing";
+// //       break;
+// //     case numer <= 50:
+// //         result = dogs[1];
+// //         break;
+// //     case numer = 101:
+// //       result = dogs[2], dogs[3];
+// //       break;
+// //   }
+// //   return result
 
-// } 
+// // } 
 
-console.log(howManyDalmations(5))
+// console.log(howManyDalmations(5))
   
-  var dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"];
+//   var dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"];
+
+
+//   function xor(a, b) {
+//     return a != b;
+//   }
+
+  function wrap(value) {
+    return  {
+      "value":value 
+    };
+  }
+
+  console.log(wrap("MyTest"))
+
+  function usdcny(usd){
+   return usd * 6.75
+
+  }
+
+  function pillars(num_pill, dist, width) {
+    let distBetweenFirstandLast = 0
+    
+    if (num_pill > 1){
+     const pill_width = (num_pill -2) * width
+     const distInCM = dist * 1000
+     distBetweenFirstandLast = pill_width + distInCM
+    }else {
+        distBetweenFirstandLast = 0
+    }
+
+    return distBetweenFirstandLast
+  }
+
+  console.log(pillars(1, 20, 25))
+
+  function smash (words) {
+    return words.join(" ")
+    
+  };
+
+  console.log(smash(["hello", "world"]))
+
+  class Ship {
+    constructor(draft,crew){
+     this.draft = draft;
+     this.crew = crew;
+    }
+     
+     isWorthIt(){
+       return this.draft - 1.5 * this.crew > 20;
+     }
+  }
+
+  var titanic = new Ship(15, 10);
+  console.log(titanic.isWorthIt())
