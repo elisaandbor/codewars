@@ -271,3 +271,24 @@
 
   var titanic = new Ship(15, 10);
   console.log(titanic.isWorthIt())
+function findDifference(a,b){
+  let productedOFArrayA = a.reduce((a,b) => a * b)
+  let productedOFArrayB = b.reduce((a,b) => a * b)
+
+  if (productedOFArrayA > productedOFArrayB){
+   return productedOFArrayA - productedOFArrayB
+  }else 
+    return  productedOFArrayB -  productedOFArrayA
+}
+
+console.log(findDifference([3, 2, 5], [1, 4, 4]))
+
+var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+function gooseFilter (birds) {
+  
+  
+  let newBirds = birds.filter((bridss) =>{
+         return bridss != geese })
+};
+
+console.log(gooseFilter(geese))
